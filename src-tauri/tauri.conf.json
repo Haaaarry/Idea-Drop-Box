@@ -1,0 +1,45 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Idea Drop Box",
+  "version": "0.1.0",
+  "identifier": "com.local.idea-drop-box",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devUrl": "http://127.0.0.1:5173",
+    "frontendDist": "../dist/renderer"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "Idea Drop Box",
+        "url": "index.html#/main",
+        "width": 1080,
+        "height": 720,
+        "minWidth": 860,
+        "minHeight": 600
+      },
+      {
+        "label": "capture",
+        "title": "Capture Idea",
+        "url": "index.html#/capture",
+        "width": 460,
+        "height": 188,
+        "visible": false,
+        "decorations": false,
+        "resizable": false,
+        "alwaysOnTop": true,
+        "skipTaskbar": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": ["icons/icon.ico"]
+  }
+}

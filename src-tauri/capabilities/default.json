@@ -1,0 +1,7 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Default permissions for Idea Drop Box windows",
+  "windows": ["main", "capture"],
+  "permissions": ["core:default"]
+}
