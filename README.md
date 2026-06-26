@@ -2,6 +2,8 @@
 
 桌面端想法收集器：用全局快捷键呼出小窗口记录想法，并在每天设定时间用 DeepSeek API 生成想法日报，同时保存到应用内和 Markdown 文件。
 
+![截图](assets/screenshot.png)
+
 ## 当前状态
 
 已实现 Windows 桌面版核心流程：
